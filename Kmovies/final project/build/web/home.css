@@ -1,0 +1,49 @@
+.home-main-bg{
+    height: 100vh;
+    background-image: url("https://cdn.wallpapersafari.com/80/26/W34E0N.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.main-con{
+    border: 0px solid #ccc;
+    padding: 30px;
+    color: white;
+    box-shadow: 0 0 20px gold;
+    width: 50%;
+    height: 60vh;
+    margin-top: 70px;
+    border-radius: 20px;
+    background-color: transparent;
+}
+.main-con {
+    border: 0px solid #ccc;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden; /* Ensure images don't overflow the container */
+}
+
+.main-con:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgb(249, 2, 2);
+}
+img{
+    height: 200px;
+    width: 250px;
+    border-radius: 30px;
+}
+.main-h{
+    font-size: 50px;
+}
+p{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.para-cap{
+    margin-top: 40px;
+}
+#span-k{
+    color: rgb(255, 0, 0);
+}
+/* Add these styles to your home.css file */
+
+

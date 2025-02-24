@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kmovies</title>
+    <link rel="stylesheet" href="theatre.css">
+    <link rel="website icon" type="png" href="Kmovies.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script>
+        
+    </script>
+</head>
+<body>
+    <div class="navigation-back">
+        <a href="movies.html" style="font-size: 20px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+            </svg>Back
+        </a>
+        <span id="mname"></span>
+    </div>
+
+
+    <div class="Available-sec d-flex flex-row">
+        <h2 class="mt-4">Available Theatres</h2>
+        <center>
+            
+        </center>
+        <div class="ml-auto mt-3">
+            <span class="text-white mr-2" id="day"></span>
+            <button id="btd1" class="btn btn-outline-danger" onclick="return daybtn1()">FRI <br> 15 <br> DEC </button>
+            <button id="btd2"  class="btn btn-outline-success ml-3" onclick="return daybtn2()">SAT <br> 16 <br> DEC </button>
+            <button id="btd3"  class="btn btn-outline-danger ml-3" onclick="return daybtn3()">SUN <br> 17 <br> DEC </button>
+            <button id="btd4" class="btn btn-outline-success ml-3" onclick="return daybtn4()">MON <br> 18 <br> DEC </button>
+        </div>
+    </div> 
+    <div class="main-bg">
+
+        <div class="k-movies-banner">
+            <img src="k-movies-banner.png" id="banner-img">
+        </div>
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-12 p-4  theatre-card-bg d-flex flex-column">
+                    <center>
+                    <div class="order-1">
+                        <h4>Cinepolis: PVP Square Mall, Vijayawada:</h4>
+                        <a href="#" style="color: greenyellow; margin-left: 20px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                                <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                                <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                            </svg>M-Ticket
+                        </a>
+                        <a href="https://www.dominos.co.in/"  target="_blank" style="color: orange; margin-left: 20px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cup-straw" viewBox="0 0 16 16">
+                                <path d="M13.902.334a.5.5 0 0 1-.28.65l-2.254.902-.4 1.927c.376.095.715.215.972.367.228.135.56.396.56.82 0 .046-.004.09-.011.132l-.962 9.068a1.28 1.28 0 0 1-.524.93c-.488.34-1.494.87-3.01.87-1.516 0-2.522-.53-3.01-.87a1.28 1.28 0 0 1-.524-.93L3.51 5.132A.78.78 0 0 1 3.5 5c0-.424.332-.685.56-.82.262-.154.607-.276.99-.372C5.824 3.614 6.867 3.5 8 3.5c.712 0 1.389.045 1.985.127l.464-2.215a.5.5 0 0 1 .303-.356l2.5-1a.5.5 0 0 1 .65.278zM9.768 4.607A13.991 13.991 0 0 0 8 4.5c-1.076 0-2.033.11-2.707.278A3.284 3.284 0 0 0 4.645 5c.146.073.362.15.648.222C5.967 5.39 6.924 5.5 8 5.5c.571 0 1.109-.03 1.588-.085l.18-.808zm.292 1.756C9.445 6.45 8.742 6.5 8 6.5c-1.133 0-2.176-.114-2.95-.308a5.514 5.514 0 0 1-.435-.127l.838 8.03c.013.121.06.186.102.215.357.249 1.168.69 2.438.69 1.27 0 2.081-.441 2.438-.69.042-.029.09-.094.102-.215l.852-8.03a5.517 5.517 0 0 1-.435.127 8.88 8.88 0 0 1-.89.17zM4.467 4.884s.003.002.005.006l-.005-.006zm7.066 0-.005.006c.002-.004.005-.006.005-.006zM11.354 5a3.174 3.174 0 0 0-.604-.21l-.099.445.055-.013c.286-.072.502-.149.648-.222z"/>
+                            </svg>Food & Beverage
+                        </a>
+                        <a target="_blank" href="https://www.google.co.in/maps/place/Cin%C3%A9polis/@16.5024259,80.6401367,17z/data=!3m2!4b1!5s0x3a35faafedc65387:0x9919be61b1c94f87!4m6!3m5!1s0x3a35fb2ae67df999:0xa37a8a8ea408ca64!8m2!3d16.5024259!4d80.6427116!16s%2Fg%2F11b6ntfgv8?entry=ttu" style="color: red; margin-left: 20px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                            </svg>Location
+                        </a>
+                    </div>
+                    <div class="order-2 m-4 d-flex flex-row justify-content-center">
+                        <input type="button" class="btn btn-outline-success m-2" id="btn_11" onclick="return book_11()" value="11:15 AM">
+                        <input type="button" class="btn btn-outline-success m-2" id="btn_12" onclick="return book_12()" value="02:45 PM">
+                        <input type="button" class="btn btn-outline-success m-2" id="btn_13" onclick="return book_13()" value="06:15 PM">
+                        <input type="button" class="btn btn-outline-success m-2" id="btn_14" onclick="return book_14()" value="09:45 PM">
+                    </div>
+                </center>
+                </div>
+
+                <div class="col-12  p-4 theatre-card-bg  mt-4 d-flex flex-column ">
+                    <center>
+                    <div class="order-1">
+                        <h4>G3 Theatres: Raj Yuvraj, Vijayawada:</h4>
+                        <a href="#" style="color: greenyellow; margin-left: 20px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                                <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                                <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                            </svg>M-Ticket
+                        </a>
+                        <a href="https://www.dominos.co.in/" target="_blank" style="color: orange; margin-left: 20px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cup-straw" viewBox="0 0 16 16">
+                                <path d="M13.902.334a.5.5 0 0 1-.28.65l-2.254.902-.4 1.927c.376.095.715.215.972.367.228.135.56.396.56.82 0 .046-.004.09-.011.132l-.962 9.068a1.28 1.28 0 0 1-.524.93c-.488.34-1.494.87-3.01.87-1.516 0-2.522-.53-3.01-.87a1.28 1.28 0 0 1-.524-.93L3.51 5.132A.78.78 0 0 1 3.5 5c0-.424.332-.685.56-.82.262-.154.607-.276.99-.372C5.824 3.614 6.867 3.5 8 3.5c.712 0 1.389.045 1.985.127l.464-2.215a.5.5 0 0 1 .303-.356l2.5-1a.5.5 0 0 1 .65.278zM9.768 4.607A13.991 13.991 0 0 0 8 4.5c-1.076 0-2.033.11-2.707.278A3.284 3.284 0 0 0 4.645 5c.146.073.362.15.648.222C5.967 5.39 6.924 5.5 8 5.5c.571 0 1.109-.03 1.588-.085l.18-.808zm.292 1.756C9.445 6.45 8.742 6.5 8 6.5c-1.133 0-2.176-.114-2.95-.308a5.514 5.514 0 0 1-.435-.127l.838 8.03c.013.121.06.186.102.215.357.249 1.168.69 2.438.69 1.27 0 2.081-.441 2.438-.69.042-.029.09-.094.102-.215l.852-8.03a5.517 5.517 0 0 1-.435.127 8.88 8.88 0 0 1-.89.17zM4.467 4.884s.003.002.005.006l-.005-.006zm7.066 0-.005.006c.002-.004.005-.006.005-.006zM11.354 5a3.174 3.174 0 0 0-.604-.21l-.099.445.055-.013c.286-.072.502-.149.648-.222z"/>
+                            </svg>Food & Beverage
+                        </a>
+                        <a target="_blank" href="https://www.google.co.in/maps/place/G3+Raj+Yuvraj/@16.5171632,80.6262285,17z/data=!3m1!4b1!4m6!3m5!1s0x3a35effec73c482f:0xd09e2da1981de70c!8m2!3d16.5171632!4d80.6288034!16s%2Fg%2F11bwpysfwz?entry=ttu" style="color: red; margin-left: 20px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                            </svg>Location
+                        </a>
+                    </div>
+                    <div class="order-2 m-4 d-flex flex-row  justify-content-center">
+                        <input type="button" class="btn btn-outline-success m-2" id="btn_21" onclick="return book_21()" value="06:30 AM">
+                        <input type="button" class="btn btn-outline-success m-2" id="btn_22" onclick="return book_22()" value="10:15 AM">
+                        <input type="button" class="btn btn-outline-success m-2" id="btn_23" onclick="return book_23()" value="02:00 PM">
+                        <input type="button" class="btn btn-outline-success m-2" id="btn_24" onclick="return book_24()" value="06:30 PM">
+                    </div></center>
+                </div>
+
+                <div class="col-12  p-4 theatre-card-bg  mt-4 d-flex  flex-column">
+                    <center>
+                        <div class="order-1">
+                            <h4>Tara Screens 2K A/C, Payakapuram: Vijayawada:</h4>
+                            <a href="#" style="color: greenyellow; margin-left: 20px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                                    <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                                    <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                </svg>M-Ticket
+                            </a>
+                            <a href="https://www.dominos.co.in/"  target="_blank" style="color: orange; margin-left: 20px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cup-straw" viewBox="0 0 16 16">
+                                    <path d="M13.902.334a.5.5 0 0 1-.28.65l-2.254.902-.4 1.927c.376.095.715.215.972.367.228.135.56.396.56.82 0 .046-.004.09-.011.132l-.962 9.068a1.28 1.28 0 0 1-.524.93c-.488.34-1.494.87-3.01.87-1.516 0-2.522-.53-3.01-.87a1.28 1.28 0 0 1-.524-.93L3.51 5.132A.78.78 0 0 1 3.5 5c0-.424.332-.685.56-.82.262-.154.607-.276.99-.372C5.824 3.614 6.867 3.5 8 3.5c.712 0 1.389.045 1.985.127l.464-2.215a.5.5 0 0 1 .303-.356l2.5-1a.5.5 0 0 1 .65.278zM9.768 4.607A13.991 13.991 0 0 0 8 4.5c-1.076 0-2.033.11-2.707.278A3.284 3.284 0 0 0 4.645 5c.146.073.362.15.648.222C5.967 5.39 6.924 5.5 8 5.5c.571 0 1.109-.03 1.588-.085l.18-.808zm.292 1.756C9.445 6.45 8.742 6.5 8 6.5c-1.133 0-2.176-.114-2.95-.308a5.514 5.514 0 0 1-.435-.127l.838 8.03c.013.121.06.186.102.215.357.249 1.168.69 2.438.69 1.27 0 2.081-.441 2.438-.69.042-.029.09-.094.102-.215l.852-8.03a5.517 5.517 0 0 1-.435.127 8.88 8.88 0 0 1-.89.17zM4.467 4.884s.003.002.005.006l-.005-.006zm7.066 0-.005.006c.002-.004.005-.006.005-.006zM11.354 5a3.174 3.174 0 0 0-.604-.21l-.099.445.055-.013c.286-.072.502-.149.648-.222z"/>
+                                </svg>Food & Beverage
+                            </a>
+                            <a target="_blank" href="https://www.google.co.in/maps/place/Tara+Screens/@16.5450198,80.6436606,17z/data=!3m1!4b1!4m6!3m5!1s0x3a35e51aa0fa9757:0x587aa43306be1ca9!8m2!3d16.5450198!4d80.6436606!16s%2Fg%2F11h_9vq5q2?entry=ttu" style="color: red; margin-left: 20px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                </svg>Location
+                            </a>
+                        </div>
+                        <div class="order-2 m-4 d-flex flex-row  justify-content-center">
+                            <input type="button" class="btn btn-outline-success m-2" id="btn_31" onclick="return book_31()" value="11:15 AM">
+                            <input type="button" class="btn btn-outline-success m-2" id="btn_32" onclick="return book_32()" value="02:45 PM">
+                            <input type="button" class="btn btn-outline-success m-2" id="btn_33" onclick="return book_33()" value="06:15 PM">
+                            <input type="button" class="btn btn-outline-success m-2" id="btn_34" onclick="return book_34()" value="09:45 PM">
+                        </div>
+                    </center>
+                </div>
+
+                <div class="col-12  p-4 theatre-card-bg  mt-4 d-flex  flex-column">
+                    <center>
+                        <div class="order-1">
+                            <h4>INOX: LEPL Icon, Patamata:</h4>
+                            <a href="#" style="color: greenyellow; margin-left: 20px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                                    <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                                    <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                </svg>M-Ticket
+                            </a>
+                            <a href="https://www.dominos.co.in/" target="_blank" style="color: orange; margin-left: 20px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cup-straw" viewBox="0 0 16 16">
+                                    <path d="M13.902.334a.5.5 0 0 1-.28.65l-2.254.902-.4 1.927c.376.095.715.215.972.367.228.135.56.396.56.82 0 .046-.004.09-.011.132l-.962 9.068a1.28 1.28 0 0 1-.524.93c-.488.34-1.494.87-3.01.87-1.516 0-2.522-.53-3.01-.87a1.28 1.28 0 0 1-.524-.93L3.51 5.132A.78.78 0 0 1 3.5 5c0-.424.332-.685.56-.82.262-.154.607-.276.99-.372C5.824 3.614 6.867 3.5 8 3.5c.712 0 1.389.045 1.985.127l.464-2.215a.5.5 0 0 1 .303-.356l2.5-1a.5.5 0 0 1 .65.278zM9.768 4.607A13.991 13.991 0 0 0 8 4.5c-1.076 0-2.033.11-2.707.278A3.284 3.284 0 0 0 4.645 5c.146.073.362.15.648.222C5.967 5.39 6.924 5.5 8 5.5c.571 0 1.109-.03 1.588-.085l.18-.808zm.292 1.756C9.445 6.45 8.742 6.5 8 6.5c-1.133 0-2.176-.114-2.95-.308a5.514 5.514 0 0 1-.435-.127l.838 8.03c.013.121.06.186.102.215.357.249 1.168.69 2.438.69 1.27 0 2.081-.441 2.438-.69.042-.029.09-.094.102-.215l.852-8.03a5.517 5.517 0 0 1-.435.127 8.88 8.88 0 0 1-.89.17zM4.467 4.884s.003.002.005.006l-.005-.006zm7.066 0-.005.006c.002-.004.005-.006.005-.006zM11.354 5a3.174 3.174 0 0 0-.604-.21l-.099.445.055-.013c.286-.072.502-.149.648-.222z"/>
+                                </svg>Food & Beverage
+                            </a>
+                            <a target="_blank" href="https://www.google.co.in/maps/place/INOX+LEPL+Icon+-+Patamata/@16.5026132,80.6598998,17z/data=!3m1!4b1!4m6!3m5!1s0x3a35fac8af6a8e6f:0x31b258f18dfbe910!8m2!3d16.5026132!4d80.6598998!16s%2Fg%2F1tgm18bw?entry=ttu" style="color: red; margin-left: 20px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                </svg>Location
+                            </a>
+                        </div>
+                        <div class="order-2 m-4 d-flex flex-row  justify-content-center">
+                            <input type="button" class="btn btn-outline-success m-2" id="btn_41" onclick="return book_41()" value="09:30 AM">
+                            <input type="button" class="btn btn-outline-success m-2" id="btn_42" onclick="return book_42()" value="01:15 PM">
+                            <input type="button" class="btn btn-outline-success m-2" id="btn_43" onclick="return book_43()" value="05:00 PM">
+                            <input type="button" class="btn btn-outline-success m-2" id="btn_44" onclick="return book_44()" value="09:15 PM">
+                    
+                        </div>
+                    </center>
+                </div>
+
+                <div class="col-12  p-4 theatre-card-bg  mt-4 d-flex  flex-column">
+                    <center>
+                        <div class="order-1">
+                            <h4>Alankar A/C 4K Dolby Surround: Vijayawada:</h4>
+                            <a href="#" style="color: greenyellow; margin-left: 20px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                                    <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                                    <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                </svg>M-Ticket
+                            </a>
+                            <a href="https://www.dominos.co.in/" target="_blank" style="color: orange; margin-left: 20px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cup-straw" viewBox="0 0 16 16">
+                                    <path d="M13.902.334a.5.5 0 0 1-.28.65l-2.254.902-.4 1.927c.376.095.715.215.972.367.228.135.56.396.56.82 0 .046-.004.09-.011.132l-.962 9.068a1.28 1.28 0 0 1-.524.93c-.488.34-1.494.87-3.01.87-1.516 0-2.522-.53-3.01-.87a1.28 1.28 0 0 1-.524-.93L3.51 5.132A.78.78 0 0 1 3.5 5c0-.424.332-.685.56-.82.262-.154.607-.276.99-.372C5.824 3.614 6.867 3.5 8 3.5c.712 0 1.389.045 1.985.127l.464-2.215a.5.5 0 0 1 .303-.356l2.5-1a.5.5 0 0 1 .65.278zM9.768 4.607A13.991 13.991 0 0 0 8 4.5c-1.076 0-2.033.11-2.707.278A3.284 3.284 0 0 0 4.645 5c.146.073.362.15.648.222C5.967 5.39 6.924 5.5 8 5.5c.571 0 1.109-.03 1.588-.085l.18-.808zm.292 1.756C9.445 6.45 8.742 6.5 8 6.5c-1.133 0-2.176-.114-2.95-.308a5.514 5.514 0 0 1-.435-.127l.838 8.03c.013.121.06.186.102.215.357.249 1.168.69 2.438.69 1.27 0 2.081-.441 2.438-.69.042-.029.09-.094.102-.215l.852-8.03a5.517 5.517 0 0 1-.435.127 8.88 8.88 0 0 1-.89.17zM4.467 4.884s.003.002.005.006l-.005-.006zm7.066 0-.005.006c.002-.004.005-.006.005-.006zM11.354 5a3.174 3.174 0 0 0-.604-.21l-.099.445.055-.013c.286-.072.502-.149.648-.222z"/>
+                                </svg>Food & Beverage
+                            </a>
+                            <a target="_blank" href="https://www.google.co.in/maps/place/Alankar+theatre/@16.516004,80.6268275,17z/data=!3m1!4b1!4m6!3m5!1s0x3a35effc28b05519:0x297004dc3b0beb18!8m2!3d16.516004!4d80.6268275!16s%2Fg%2F11csqd0yvj?entry=ttu" style="color: red; margin-left: 20px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                </svg>Location
+                            </a>
+                        </div>
+                        <div class="order-2 m-4 d-flex flex-row  justify-content-center">
+                            
+                            <input type="button" class="btn btn-outline-success m-2" id="btn_51" onclick="return book_51()" value="10:30 AM">
+                            <input type="button" class="btn btn-outline-success m-2" id="btn_52" onclick="return book_52()" value="02:15 PM">
+                            <input type="button" class="btn btn-outline-success m-2" id="btn_53" onclick="return book_53()" value="05:45 PM">
+                            <input type="button" class="btn btn-outline-success m-2" id="btn_54" onclick="return book_54()" value="09:30 PM">
+                        </div>
+                    </center>
+                </div>
+
+                <div class="col-12  p-4 theatre-card-bg  mt-4 mb-4 d-flex  flex-column">
+                    <center>
+                        <div class="order-1">
+                            <h4>Navarang Theatre: Vijayawada:</h4>
+                            <a href="#" style="color: greenyellow; margin-left: 20px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                                    <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                                    <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                </svg>M-Ticket
+                            </a>
+                            <a href="https://www.dominos.co.in/" target="_blank" style="color: orange; margin-left: 20px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cup-straw" viewBox="0 0 16 16">
+                                    <path d="M13.902.334a.5.5 0 0 1-.28.65l-2.254.902-.4 1.927c.376.095.715.215.972.367.228.135.56.396.56.82 0 .046-.004.09-.011.132l-.962 9.068a1.28 1.28 0 0 1-.524.93c-.488.34-1.494.87-3.01.87-1.516 0-2.522-.53-3.01-.87a1.28 1.28 0 0 1-.524-.93L3.51 5.132A.78.78 0 0 1 3.5 5c0-.424.332-.685.56-.82.262-.154.607-.276.99-.372C5.824 3.614 6.867 3.5 8 3.5c.712 0 1.389.045 1.985.127l.464-2.215a.5.5 0 0 1 .303-.356l2.5-1a.5.5 0 0 1 .65.278zM9.768 4.607A13.991 13.991 0 0 0 8 4.5c-1.076 0-2.033.11-2.707.278A3.284 3.284 0 0 0 4.645 5c.146.073.362.15.648.222C5.967 5.39 6.924 5.5 8 5.5c.571 0 1.109-.03 1.588-.085l.18-.808zm.292 1.756C9.445 6.45 8.742 6.5 8 6.5c-1.133 0-2.176-.114-2.95-.308a5.514 5.514 0 0 1-.435-.127l.838 8.03c.013.121.06.186.102.215.357.249 1.168.69 2.438.69 1.27 0 2.081-.441 2.438-.69.042-.029.09-.094.102-.215l.852-8.03a5.517 5.517 0 0 1-.435.127 8.88 8.88 0 0 1-.89.17zM4.467 4.884s.003.002.005.006l-.005-.006zm7.066 0-.005.006c.002-.004.005-.006.005-.006zM11.354 5a3.174 3.174 0 0 0-.604-.21l-.099.445.055-.013c.286-.072.502-.149.648-.222z"/>
+                                </svg>Food & Beverage
+                            </a>
+                            <a target="_blank" href="https://www.google.co.in/maps/place/Navarang+Theater/@16.5095043,80.6271896,17z/data=!3m1!4b1!4m6!3m5!1s0x3a35f0017ffc75c3:0x1eacb814e5037886!8m2!3d16.5095043!4d80.6271896!16s%2Fg%2F12hl_7xzx?entry=ttu" style="color: red; margin-left: 20px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                </svg>Location
+                            </a>
+                        </div>
+                        <div class="order-2 m-4 d-flex flex-row  justify-content-center">
+                            <input type="button" class="btn btn-outline-success m-2" id="btn_61" onclick="return book_61()" value="11:15 AM">
+                            <input type="button" class="btn btn-outline-success m-2" id="btn_62" onclick="return book_62()" value="02:45 PM">
+                            <input type="button" class="btn btn-outline-success m-2" id="btn_63" onclick="return book_63()" value="06:15 PM">
+                            <input type="button" class="btn btn-outline-success m-2" id="btn_64" onclick="return book_64()" value="09:45 PM">
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let name;
+        let date;
+        window.onload = function ()
+        {
+            name=localStorage.getItem("mname");
+            document.getElementById("mname").innerHTML=name+" - Telugu";
+	}
+        function daybtn1()
+        {
+            date="15-FRI-DEC";
+            console.log(date);
+            document.getElementById("day").innerText=date;
+        }
+        function daybtn2()
+        {
+            date="16-SAT-DEC";
+            console.log(date);
+            document.getElementById("day").innerText=date;
+        }
+        function daybtn3()
+        {
+            date="17-SUN-DEC";
+            console.log(date);
+            document.getElementById("day").innerText=date;
+        }
+        function daybtn4()
+        {
+            date="18-MON-DEC";
+            console.log(date);
+            document.getElementById("day").innerText=date;
+        }
+        function book_11()
+        {
+            var x=document.getElementById("btn_11").value;
+            let t="Cinepolis: PVP Square Mall, Vijayawada";
+            console.log(x);
+            console.log(t);
+            console.log(name);
+            localStorage.setItem("td",[name,t,date,x]);
+            window.location.href="seating.html";
+        }
+        function book_12()
+        {
+            var x=document.getElementById("btn_12").value;
+            let t="Cinepolis: PVP Square Mall, Vijayawada";
+            console.log(x);
+            console.log(t);
+            console.log(name);
+            localStorage.setItem("td",[name,t,date,x]);
+            window.location.href="seating.html";
+        }
+        function book_13()
+        {
+            var x=document.getElementById("btn_13").value;
+            let t="Cinepolis: PVP Square Mall, Vijayawada";
+            console.log(x);
+            console.log(t);
+            console.log(name);
+            localStorage.setItem("td",[name,t,date,x]);
+            window.location.href="seating.html";
+        }
+        function book_14()
+        {
+            var x=document.getElementById("btn_14").value;
+            let t="Cinepolis: PVP Square Mall, Vijayawada";
+            console.log(x);
+            console.log(t);
+            console.log(name);
+            localStorage.setItem("td",[name,t,date,x]);
+            window.location.href="seating.html";
+        }
+        function book_21()
+        {
+            var x=document.getElementById("btn_21").value;
+            let t="G3 Theatres: Raj Yuvraj, Vijayawada";
+            console.log(x);
+            console.log(t);
+            console.log(name);
+            localStorage.setItem("td",[name,t,date,x]);
+            window.location.href="seating.html";
+        }
+        function book_22()
+        {
+            var x=document.getElementById("btn_22").value;
+            let t="G3 Theatres: Raj Yuvraj, Vijayawada";
+            console.log(x);
+            console.log(t);
+            console.log(name);
+            localStorage.setItem("td",[name,t,date,x]);
+            window.location.href="seating.html";
+        }
+        function book_23()
+        {
+            var x=document.getElementById("btn_23").value;
+            let t="G3 Theatres: Raj Yuvraj, Vijayawada";
+            console.log(x);
+            console.log(t);
+            console.log(name);
+            localStorage.setItem("td",[name,t,date,x]);
+            window.location.href="seating.html";
+        }
+        function book_24()
+        {
+            var x=document.getElementById("btn_24").value;
+            let t="G3 Theatres: Raj Yuvraj, Vijayawada";
+            console.log(x);
+            console.log(t);
+            console.log(name);
+            localStorage.setItem("td",[name,t,date,x]);
+            window.location.href="seating.html";
+        }
+
+        function book_31()
+        {
+            var x=document.getElementById("btn_31").value;
+            let t="Tara Screens 2K A/C, Payakapuram: Vijayawada";
+            console.log(x);
+            console.log(t);
+            console.log(name);
+            localStorage.setItem("td",[name,t,date,x]);
+            window.location.href="seating.html";
+        }
+        function book_32()
+        {
+            var x=document.getElementById("btn_32").value;
+            let t="Tara Screens 2K A/C, Payakapuram: Vijayawada";
+            console.log(x);
+            console.log(t);
+            console.log(name);
+            localStorage.setItem("td",[name,t,date,x]);
+            window.location.href="seating.html";
+        }
+        function book_33()
+        {
+            var x=document.getElementById("btn_33").value;
+            let t="Tara Screens 2K A/C, Payakapuram: Vijayawada";
+            console.log(x);
+            console.log(t);
+            console.log(name);
+            localStorage.setItem("td",[name,t,date,x]);
+            window.location.href="seating.html";
+        }
+        function book_34()
+        {
+            var x=document.getElementById("btn_34").value;
+            let t="Tara Screens 2K A/C, Payakapuram: Vijayawada";
+            console.log(x);
+            console.log(t);
+            console.log(name);
+            localStorage.setItem("td",[name,t,date,x]);
+            window.location.href="seating.html";
+        }
+
+        function book_41()
+        {
+            var x=document.getElementById("btn_41").value;
+            let t="INOX: LEPL Icon, Patamata";
+            console.log(x);
+            console.log(t);
+            console.log(name);
+            localStorage.setItem("td",[name,t,date,x]);
+            window.location.href="seating.html";
+        }
+        function book_42()
+        {
+            var x=document.getElementById("btn_42").value;
+            let t="INOX: LEPL Icon, Patamata";
+            console.log(x);
+            console.log(t);
+            console.log(name);
+            localStorage.setItem("td",[name,t,date,x]);
+            window.location.href="seating.html";
+        }
+        function book_43()
+        {
+            var x=document.getElementById("btn_43").value;
+            let t="INOX: LEPL Icon, Patamata";
+            console.log(x);
+            console.log(t);
+            console.log(name);
+            localStorage.setItem("td",[name,t,date,x]);
+            window.location.href="seating.html";
+        }
+        function book_44()
+        {
+            var x=document.getElementById("btn_44").value;
+            let t="INOX: LEPL Icon, Patamata";
+            console.log(x);
+            console.log(t);
+            console.log(name);
+            localStorage.setItem("td",[name,t,date,x]);
+            window.location.href="seating.html";
+        }
+
+        function book_51()
+        {
+            var x=document.getElementById("btn_51").value;
+            let t="Alankar A/C 4K Dolby Surround: Vijayawada";
+            console.log(x);
+            console.log(t);
+            console.log(name);
+            localStorage.setItem("td",[name,t,date,x]);
+            window.location.href="seating.html";
+        }
+        function book_52()
+        {
+            var x=document.getElementById("btn_52").value;
+            let t="Alankar A/C 4K Dolby Surround: Vijayawada";
+            console.log(x);
+            console.log(t);
+            console.log(name);
+            localStorage.setItem("td",[name,t,date,x]);
+            window.location.href="seating.html";
+        }
+        function book_53()
+        {
+            var x=document.getElementById("btn_53").value;
+            let t="Alankar A/C 4K Dolby Surround: Vijayawada";
+            console.log(x);
+            console.log(t);
+            console.log(name);
+            localStorage.setItem("td",[name,t,date,x]);
+            window.location.href="seating.html";
+        }
+        function book_54()
+        {
+            var x=document.getElementById("btn_54").value;
+            let t="Alankar A/C 4K Dolby Surround: Vijayawada";
+            console.log(x);
+            console.log(t);
+            console.log(name);
+            localStorage.setItem("td",[name,t,date,x]);
+            window.location.href="seating.html";
+        }
+
+        function book_61()
+        {
+            var x=document.getElementById("btn_61").value;
+            let t="Navarang Theatre: Vijayawada";
+            console.log(x);
+            console.log(t);
+            console.log(name);
+            localStorage.setItem("td",[name,t,date,x]);
+            window.location.href="seating.html";
+        }
+        function book_62()
+        {
+            var x=document.getElementById("btn_62").value;
+            let t="Navarang Theatre: Vijayawada";
+            console.log(x);
+            console.log(t);
+            console.log(name);
+            localStorage.setItem("td",[name,t,date,x]);
+            window.location.href="seating.html";
+        }
+        function book_63()
+        {
+            var x=document.getElementById("btn_63").value;
+            let t="Navarang Theatre: Vijayawada";
+            console.log(x);
+            console.log(t);
+            console.log(name);
+            localStorage.setItem("td",[name,t,date,x]);
+            window.location.href="seating.html";
+        }
+        function book_64()
+        {
+            var x=document.getElementById("btn_64").value;
+            let t="Navarang Theatre: Vijayawada";
+            console.log(x);
+            console.log(t);
+            console.log(name);
+            localStorage.setItem("td",[name,t,date,x]);
+            window.location.href="seating.html";
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+    <style>
+            .login-main-con{
+                background-image:url("https://th.bing.com/th/id/OIP.5nWiAZqaGXSkF2d6LDB7awHaD4?rs=1&pid=ImgDetMain");
+                background-size: cover;
+                height: 100vh;
+                width: 100vw;
+
+            }
+
+            .login-card {
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                margin: 10px;
+                padding: 15px;
+                width: 300px;
+                background-color: #fff;
+                transition: transform 0.3s ease-in-out;
+                overflow: hidden; 
+            }
+
+            .login-card:hover {
+                transform: scale(1.05);
+                box-shadow: 0 0 30px rgb(245, 3, 3);
+            }
+
+            .blur{
+                filter: blur(8px);
+                -webkit-filter: blur(8px);
+            }
+            #login-card{
+                background-color: black;
+                padding: 50px 20px 30px 20px;
+                width:500px;
+                height: 350px;
+                border: 0px solid black;
+                border-radius: 30px;
+            }
+            h1{
+                color: white;
+            }
+            #span-k{
+                color: red;
+            }
+            #TandC{
+                
+                color: white;
+            }
+            tr,th{
+                color: white;
+                margin: 20px;
+            }
+            input{
+                border-radius: 20px;
+            }
+            p{
+                color: white;
+                margin: 5px;
+
+            }
+            .login-button{
+                background-color: transparent;
+                color: red;
+                border: 2px solid red;
+                border-radius: 5px;
+                margin-top: 30px;
+                height: 30px;
+                width: 70px;
+            }
+    </style>
+</head>
+<body>
+    <div class="login-main-con d-flex flex-column justify-content-center">
+        <div class="d-flex flex-row justify-content-center">
+                <div id="login-card" class="login-card">
+                    <center>
+                        <h1>Login to <span id="span-k">K</span>movies</h1>
+                        <form id="form1">
+                            <table>
+                                <tr>
+                                    <th>Enter Your User-Id : </th>
+                                    <td>
+                                        <input type="text" id="uname" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Enter Your Password : </th>
+                                    <td>
+                                        <input type="password" id="upass" required>
+                                    </td>
+                                </tr>
+                            </table>
+                            <input type="checkbox" id="ch" required><span id="TandC">Accept <a href="#">Terms and conditions.</a></span><br>
+                            <input type="submit" class="login-button" value="Login">
+                            <p id="results"></p>
+                        </form>
+                        
+                    </center>
+                </div>
+        </div>
+    </div>
+    <script>
+    </script>
+</body>
+</html>

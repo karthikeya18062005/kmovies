@@ -1,0 +1,67 @@
+.login-main-con{
+    background-image:url("https://wallpaperaccess.com/full/3988284.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.login-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    width: 300px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden; /* Ensure images don't overflow the container */
+}
+
+.login-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgb(245, 3, 3);
+}
+
+.blur{
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+#login-card{
+    background-color: black;
+    padding: 50px 20px 30px 20px;
+    width:500px;
+    height: 350px;
+    border: 0px solid black;
+    border-radius: 30px;
+}
+h1{
+    color: white;
+}
+#span-k{
+    color: red;
+}
+#TandC{
+    
+    color: white;
+}
+tr,th{
+    color: white;
+    margin: 20px;
+}
+input{
+    border-radius: 20px;
+}
+p{
+    color: white;
+    margin: 5px;
+
+}
+.login-button{
+    background-color: transparent;
+    color: red;
+    border: 2px solid red;
+    border-radius: 5px;
+    margin-top: 30px;
+    height: 30px;
+    width: 70px;
+}

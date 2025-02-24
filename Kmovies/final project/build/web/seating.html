@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kmovies</title>
+    <link rel="stylesheet" href="seating.css">
+    <link rel="website icon" type="png" href="Kmovies.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="seat">
+        <div class="navigation-back">
+            <a href="theatre.html" style="font-size: 20px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                </svg>Back
+            </a>
+                <span id="detail"></span>
+            <br><br>
+            <div class="k-movies-banner">
+                <img src="book-tickets.png" id="banner-img">
+            </div>
+        </div>
+
+    <div class="main-bg">
+        <div class="container">
+            <div class="row">
+                <h3 class="col-12">Select Your Seats..</h3>
+                <p style="color: white;">Platinum:(180Rs)</p>
+                <!--Row-A-->
+                <div class="col-12">
+                    <span style="color: red; font-size: 15px;" class="m-3"><b>A</b></span><input type="checkbox" name="A"  value="A1" class="m-2">
+                    <input type="checkbox" name="A" value="A2" class="m-2">
+                    <input type="checkbox" name="A" value="A3" class="m-2">
+                    <input type="checkbox" name="A" value="A4" class="m-2">
+                    <input type="checkbox" name="A" value="A5" class="m-2">
+                    <input type="checkbox" name="A" value="A6" class="m-2">
+                    <input type="checkbox" name="A" value="A7" class="m-2">
+                    <input type="checkbox" name="A" value="A8" class="m-2">
+                    <input type="checkbox" name="A" value="A9" class="m-2">
+                    <input type="checkbox" name="A" value="A10" class="m-2">
+                    <input type="checkbox" name="A" value="A11" class="m-2">
+                    <input type="checkbox" name="A" value="A12" class="m-2">
+                    <input type="checkbox" name="A" value="A13" class="m-2">
+                    <input type="checkbox" name="A" value="A14" class="m-2">
+                    <input type="checkbox" name="A" value="A15" class="m-2">
+                    <input type="checkbox" name="A" value="A16" class="m-2">
+                    <input type="checkbox" name="A" value="A17" class="m-2">
+                    <input type="checkbox" name="A" value="A18" class="m-2">
+                    <input type="checkbox" name="A" value="A19" class="m-2">
+                    <input type="checkbox" name="A" value="A20" class="m-2">
+                    <input type="checkbox" name="A" value="A21" class="m-2">
+                    <input type="checkbox" name="A" value="A22" class="m-2">
+                    <input type="checkbox" name="A" value="A23" class="m-2">
+                    <input type="checkbox" name="A" value="A24" class="m-2">
+                    <input type="checkbox" name="A" value="A25" class="m-2">
+                    <input type="checkbox" name="A" value="A26" class="m-2">
+                    <input type="checkbox" name="A" value="A27" class="m-2">
+                    <input type="checkbox" name="A" value="A28" class="m-2">
+                    <input type="checkbox" name="A" value="A29" class="m-2">
+                    <input type="checkbox" name="A" value="A30" class="m-2">
+                </div>
+
+                <p style="color: gold;">Gold:(120Rs)</p>
+                <!--Row-B-->
+                <div class="col-12">
+                    <span style="color: red; font-size: 15px;" class="m-3"><b>B</b></span><input type="checkbox" name="B"  value="B1" class="m-2">
+                    <input type="checkbox" name="B" value="B2" class="m-2">
+                    <input type="checkbox" name="B" value="B3" class="m-2">
+                    <input type="checkbox" name="B" value="B4" class="m-2">
+                    <input type="checkbox" name="B" value="B5" class="m-2">
+                    <input type="checkbox" name="B" value="B6" class="m-2">
+                    <input type="checkbox" name="B" value="B7" class="m-2">
+                    <input type="checkbox" name="B" value="B8" class="m-2">
+                    <input type="checkbox" name="B" value="B9" class="m-2">
+                    <input type="checkbox" name="B" value="B10" class="m-2">
+                    <input type="checkbox" name="B" value="B11" class="m-2">
+                    <input type="checkbox" name="B" value="B12" class="m-2">
+                    <input type="checkbox" name="B" value="B13" class="m-2">
+                    <input type="checkbox" name="B" value="B14" class="m-2">
+                    <input type="checkbox" name="B" value="B15" class="m-2">
+                    <input type="checkbox" name="B" value="B16" class="m-2">
+                    <input type="checkbox" name="B" value="B17" class="m-2">
+                    <input type="checkbox" name="B" value="B18" class="m-2">
+                    <input type="checkbox" name="B" value="B19" class="m-2">
+                    <input type="checkbox" name="B" value="B20" class="m-2">
+                    <input type="checkbox" name="B" value="B21" class="m-2">
+                    <input type="checkbox" name="B" value="B22" class="m-2">
+                    <input type="checkbox" name="B" value="B23" class="m-2">
+                    <input type="checkbox" name="B" value="B24" class="m-2">
+                    <input type="checkbox" name="B" value="B25" class="m-2">
+                    <input type="checkbox" name="B" value="B26" class="m-2">
+                    <input type="checkbox" name="B" value="B27" class="m-2">
+                    <input type="checkbox" name="B" value="B28" class="m-2">
+                    <input type="checkbox" name="B" value="B29" class="m-2">
+                    <input type="checkbox" name="B" value="B30" class="m-2">
+                </div>
+
+                <!--Row-C-->
+                <div class="col-12">
+                    <span style="color: red; font-size: 15px;" class="m-3"><b>C</b></span><input type="checkbox" name="C"  value="C1" class="m-2">
+                    <input type="checkbox" name="C" value="C2" class="m-2">
+                    <input type="checkbox" name="C" value="C3" class="m-2">
+                    <input type="checkbox" name="C" value="C4" class="m-2">
+                    <input type="checkbox" name="C" value="C5" class="m-2">
+                    <input type="checkbox" name="C" value="C6" class="m-2">
+                    <input type="checkbox" name="C" value="C7" class="m-2">
+                    <input type="checkbox" name="C" value="C8" class="m-2">
+                    <input type="checkbox" name="C" value="C9" class="m-2">
+                    <input type="checkbox" name="C" value="C10" class="m-2">
+                    <input type="checkbox" name="C" value="C11" class="m-2">
+                    <input type="checkbox" name="C" value="C12" class="m-2">
+                    <input type="checkbox" name="C" value="C13" class="m-2">
+                    <input type="checkbox" name="C" value="C14" class="m-2">
+                    <input type="checkbox" name="C" value="C15" class="m-2">
+                    <input type="checkbox" name="C" value="C16" class="m-2">
+                    <input type="checkbox" name="C" value="C17" class="m-2">
+                    <input type="checkbox" name="C" value="C18" class="m-2">
+                    <input type="checkbox" name="C" value="C19" class="m-2">
+                    <input type="checkbox" name="C" value="C20" class="m-2">
+                    <input type="checkbox" name="C" value="C21" class="m-2">
+                    <input type="checkbox" name="C" value="C22" class="m-2">
+                    <input type="checkbox" name="C" value="C23" class="m-2">
+                    <input type="checkbox" name="C" value="C24" class="m-2">
+                    <input type="checkbox" name="C" value="C25" class="m-2">
+                    <input type="checkbox" name="C" value="C26" class="m-2">
+                    <input type="checkbox" name="C" value="C27" class="m-2">
+                    <input type="checkbox" name="C" value="C28" class="m-2">
+                    <input type="checkbox" name="C" value="C29" class="m-2">
+                    <input type="checkbox" name="C" value="C30" class="m-2">
+                </div>
+
+                <!--Row-D-->
+                <div class="col-12">
+                    <span style="color: red; font-size: 15px;" class="m-3"><b>D</b></span><input type="checkbox" name="D"  value="D1" class="m-2">
+                    <input type="checkbox" name="D" value="D2" class="m-2">
+                    <input type="checkbox" name="D" value="D3" class="m-2">
+                    <input type="checkbox" name="D" value="D4" class="m-2">
+                    <input type="checkbox" name="D" value="D5" class="m-2">
+                    <input type="checkbox" name="D" value="D6" class="m-2">
+                    <input type="checkbox" name="D" value="D7" class="m-2">
+                    <input type="checkbox" name="D" value="D8" class="m-2">
+                    <input type="checkbox" name="D" value="D9" class="m-2">
+                    <input type="checkbox" name="D" value="D10" class="m-2">
+                    <input type="checkbox" name="D" value="D11" class="m-2">
+                    <input type="checkbox" name="D" value="D12" class="m-2">
+                    <input type="checkbox" name="D" value="D13" class="m-2">
+                    <input type="checkbox" name="D" value="D14" class="m-2">
+                    <input type="checkbox" name="D" value="D15" class="m-2">
+                    <input type="checkbox" name="D" value="D16" class="m-2">
+                    <input type="checkbox" name="D" value="D17" class="m-2">
+                    <input type="checkbox" name="D" value="D18" class="m-2">
+                    <input type="checkbox" name="D" value="D19" class="m-2">
+                    <input type="checkbox" name="D" value="D20" class="m-2">
+                    <input type="checkbox" name="D" value="D21" class="m-2">
+                    <input type="checkbox" name="D" value="D22" class="m-2">
+                    <input type="checkbox" name="D" value="D23" class="m-2">
+                    <input type="checkbox" name="D" value="D24" class="m-2">
+                    <input type="checkbox" name="D" value="D25" class="m-2">
+                    <input type="checkbox" name="D" value="D26" class="m-2">
+                    <input type="checkbox" name="D" value="D27" class="m-2">
+                    <input type="checkbox" name="D" value="D28" class="m-2">
+                    <input type="checkbox" name="D" value="D29" class="m-2">
+                    <input type="checkbox" name="D" value="D30" class="m-2">
+                </div>
+
+                <!--Row-E-->
+                <div class="col-12">
+                    <span style="color: red; font-size: 15px;" class="m-3"><b>E</b></span><input type="checkbox" name="E"  value="E1" class="m-2">
+                    <input type="checkbox" name="E" value="E2" class="m-2">
+                    <input type="checkbox" name="E" value="E3" class="m-2">
+                    <input type="checkbox" name="E" value="E4" class="m-2">
+                    <input type="checkbox" name="E" value="E5" class="m-2">
+                    <input type="checkbox" name="E" value="E6" class="m-2">
+                    <input type="checkbox" name="E" value="E7" class="m-2">
+                    <input type="checkbox" name="E" value="E8" class="m-2">
+                    <input type="checkbox" name="E" value="E9" class="m-2">
+                    <input type="checkbox" name="E" value="E10" class="m-2">
+                    <input type="checkbox" name="E" value="E11" class="m-2">
+                    <input type="checkbox" name="E" value="E12" class="m-2">
+                    <input type="checkbox" name="E" value="E13" class="m-2">
+                    <input type="checkbox" name="E" value="E14" class="m-2">
+                    <input type="checkbox" name="E" value="E15" class="m-2">
+                    <input type="checkbox" name="E" value="E16" class="m-2">
+                    <input type="checkbox" name="E" value="E17" class="m-2">
+                    <input type="checkbox" name="E" value="E18" class="m-2">
+                    <input type="checkbox" name="E" value="E19" class="m-2">
+                    <input type="checkbox" name="E" value="E20" class="m-2">
+                    <input type="checkbox" name="E" value="E21" class="m-2">
+                    <input type="checkbox" name="E" value="E22" class="m-2">
+                    <input type="checkbox" name="E" value="E23" class="m-2">
+                    <input type="checkbox" name="E" value="E24" class="m-2">
+                    <input type="checkbox" name="E" value="E25" class="m-2">
+                    <input type="checkbox" name="E" value="E26" class="m-2">
+                    <input type="checkbox" name="E" value="E27" class="m-2">
+                    <input type="checkbox" name="E" value="E28" class="m-2">
+                    <input type="checkbox" name="E" value="E29" class="m-2">
+                    <input type="checkbox" name="E" value="E30" class="m-2">
+                </div>
+
+                <!--Row-F-->
+                <div class="col-12">
+                    <span style="color: red; font-size: 15px;" class="m-3"><b>F</b></span><input type="checkbox" name="F"  value="F1" class="m-2">
+                    <input type="checkbox" name="F" value="F2" class="m-2">
+                    <input type="checkbox" name="F" value="F3" class="m-2">
+                    <input type="checkbox" name="F" value="F4" class="m-2">
+                    <input type="checkbox" name="F" value="F5" class="m-2">
+                    <input type="checkbox" name="F" value="F6" class="m-2">
+                    <input type="checkbox" name="F" value="F7" class="m-2">
+                    <input type="checkbox" name="F" value="F8" class="m-2">
+                    <input type="checkbox" name="F" value="F9" class="m-2">
+                    <input type="checkbox" name="F" value="F10" class="m-2">
+                    <input type="checkbox" name="F" value="F11" class="m-2">
+                    <input type="checkbox" name="F" value="F12" class="m-2">
+                    <input type="checkbox" name="F" value="F13" class="m-2">
+                    <input type="checkbox" name="F" value="F14" class="m-2">
+                    <input type="checkbox" name="F" value="F15" class="m-2">
+                    <input type="checkbox" name="F" value="F16" class="m-2">
+                    <input type="checkbox" name="F" value="F17" class="m-2">
+                    <input type="checkbox" name="F" value="F18" class="m-2">
+                    <input type="checkbox" name="F" value="F19" class="m-2">
+                    <input type="checkbox" name="F" value="F20" class="m-2">
+                    <input type="checkbox" name="F" value="F21" class="m-2">
+                    <input type="checkbox" name="F" value="F22" class="m-2">
+                    <input type="checkbox" name="F" value="F23" class="m-2">
+                    <input type="checkbox" name="F" value="F24" class="m-2">
+                    <input type="checkbox" name="F" value="F25" class="m-2">
+                    <input type="checkbox" name="F" value="F26" class="m-2">
+                    <input type="checkbox" name="F" value="F27" class="m-2">
+                    <input type="checkbox" name="F" value="F28" class="m-2">
+                    <input type="checkbox" name="F" value="F29" class="m-2">
+                    <input type="checkbox" name="F" value="F30" class="m-2">
+                </div>
+
+                <p style="color: silver;">Silver:(90Rs)</p>
+                <!--Row-G-->
+                <div class="col-12">
+                    <div class="d-flex flex-row ">
+                        <div class="ml-5">
+                            <span style="color: red; font-size: 15px;" class="m-3"><b>G</b></span>
+                            <input type="checkbox" name="G"  value="G1" class="m-2">
+                            <input type="checkbox" name="G" value="G2" class="m-2">
+                            <input type="checkbox" name="G" value="G3" class="m-2">
+                            <input type="checkbox" name="G" value="G4" class="m-2">
+                            <input type="checkbox" name="G" value="G5" class="m-2">
+                            <input type="checkbox" name="G" value="G6" class="m-2">
+                            <input type="checkbox" name="G" value="G7" class="m-2">
+                            <input type="checkbox" name="G" value="G8" class="m-2">
+                            <input type="checkbox" name="G" value="G9" class="m-2">
+                            <input type="checkbox" name="G" value="G10" class="m-2">
+                            <input type="checkbox" name="G" value="G11" class="m-2">
+                            <input type="checkbox" name="G" value="G12" class="m-2">
+                            <input type="checkbox" name="G" value="G13" class="m-2">
+                        </div>
+                        <div class="ml-5">
+                            <input type="checkbox" name="G" value="G14" class="m-2">
+                            <input type="checkbox" name="G" value="G15" class="m-2">
+                            <input type="checkbox" name="G" value="G16" class="m-2">
+                            <input type="checkbox" name="G" value="G17" class="m-2">
+                            <input type="checkbox" name="G" value="G18" class="m-2">
+                            <input type="checkbox" name="G" value="G19" class="m-2">
+                            <input type="checkbox" name="G" value="G20" class="m-2">
+                            <input type="checkbox" name="G" value="G21" class="m-2">
+                            <input type="checkbox" name="G" value="G22" class="m-2">
+                            <input type="checkbox" name="G" value="G23" class="m-2">
+                            <input type="checkbox" name="G" value="G24" class="m-2">
+                            <input type="checkbox" name="G" value="G25" class="m-2">
+                            <input type="checkbox" name="G" value="G26" class="m-2">
+                        </div>
+                    </div>
+                </div>
+
+                <!--Row-H-->
+                <div class="col-12">
+                    <div class="d-flex flex-row ">
+                        <div class="ml-5">
+                            <span style="color: red; font-size: 15px;" class="m-3"><b>H</b></span>
+                            <input type="checkbox" name="H"  value="H1" class="m-2">
+                            <input type="checkbox" name="H" value="H2" class="m-2">
+                            <input type="checkbox" name="H" value="H3" class="m-2">
+                            <input type="checkbox" name="H" value="H4" class="m-2">
+                            <input type="checkbox" name="H" value="H5" class="m-2">
+                            <input type="checkbox" name="H" value="H6" class="m-2">
+                            <input type="checkbox" name="H" value="H7" class="m-2">
+                            <input type="checkbox" name="H" value="H8" class="m-2">
+                            <input type="checkbox" name="H" value="H9" class="m-2">
+                            <input type="checkbox" name="H" value="H10" class="m-2">
+                            <input type="checkbox" name="H" value="H11" class="m-2">
+                            <input type="checkbox" name="H" value="H12" class="m-2">
+                            <input type="checkbox" name="H" value="H13" class="m-2">
+                        </div>
+                        <div class="ml-5">
+                            <input type="checkbox" name="H" value="H14" class="m-2">
+                            <input type="checkbox" name="H" value="H15" class="m-2">
+                            <input type="checkbox" name="H" value="H16" class="m-2">
+                            <input type="checkbox" name="H" value="H17" class="m-2">
+                            <input type="checkbox" name="H" value="H18" class="m-2">
+                            <input type="checkbox" name="H" value="H19" class="m-2">
+                            <input type="checkbox" name="H" value="H20" class="m-2">
+                            <input type="checkbox" name="H" value="H21" class="m-2">
+                            <input type="checkbox" name="H" value="H22" class="m-2">
+                            <input type="checkbox" name="H" value="H23" class="m-2">
+                            <input type="checkbox" name="H" value="H24" class="m-2">
+                            <input type="checkbox" name="H" value="H25" class="m-2">
+                            <input type="checkbox" name="H" value="H26" class="m-2">
+                        </div>
+                    </div>
+                </div>
+
+                <!--Row-I-->
+                <div class="col-12">
+                    
+                    <div class="d-flex flex-row ">
+                        <div class="ml-5">
+                            <span style="color: red; font-size: 18px;" class="m-3"><b>I.</b></span>
+                            <input type="checkbox" name="I"  value="I1" class="m-2">
+                            <input type="checkbox" name="I" value="I2" class="m-2">
+                            <input type="checkbox" name="I" value="I3" class="m-2">
+                            <input type="checkbox" name="I" value="I4" class="m-2">
+                            <input type="checkbox" name="I" value="I5" class="m-2">
+                            <input type="checkbox" name="I" value="I6" class="m-2">
+                            <input type="checkbox" name="I" value="I7" class="m-2">
+                            <input type="checkbox" name="I" value="I8" class="m-2">
+                            <input type="checkbox" name="I" value="I9" class="m-2">
+                            <input type="checkbox" name="I" value="I10" class="m-2">
+                            <input type="checkbox" name="I" value="I11" class="m-2">
+                            <input type="checkbox" name="I" value="I12" class="m-2">
+                            <input type="checkbox" name="I" value="I13" class="m-2">
+                        </div>
+                        <div class="ml-5">
+                            <input type="checkbox" name="I" value="I14" class="m-2">
+                            <input type="checkbox" name="I" value="I15" class="m-2">
+                            <input type="checkbox" name="I" value="I16" class="m-2">
+                            <input type="checkbox" name="I" value="I17" class="m-2">
+                            <input type="checkbox" name="I" value="I18" class="m-2">
+                            <input type="checkbox" name="I" value="I19" class="m-2">
+                            <input type="checkbox" name="I" value="I20" class="m-2">
+                            <input type="checkbox" name="I" value="I21" class="m-2">
+                            <input type="checkbox" name="I" value="I22" class="m-2">
+                            <input type="checkbox" name="I" value="I23" class="m-2">
+                            <input type="checkbox" name="I" value="I24" class="m-2">
+                            <input type="checkbox" name="I" value="I25" class="m-2">
+                            <input type="checkbox" name="I" value="I26" class="m-2">
+                        </div>
+                    </div>
+                </div>
+
+                <img src="screen.png" class="w-100 mt-3 mb-3" style="border-radius: 100px;">
+                
+                <!--Modal-->
+                <div class="col-12">
+                    <div class="d-flex flex-row justify-content-center ">
+                        <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-outline-success mt-3" data-toggle="modal" data-target="#exampleModal">
+                                Enter Discount Coupon
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                <div class="modal-content bg-dark">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title text-white" id="exampleModalLabel">Discount Coupon</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body text-white">
+                                        <form>
+                                            Enter the Coupon Here:<input type="text" name="" id="coupon">
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Apply Coupon</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <!--button-Book-->
+                <div class="col-12 mt-3 mb-3">
+                    <div class="d-flex flex-row justify-content-center">
+                        <button class="btn btn-outline-success" onclick="return book()">Book now</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!--BILL PRINING-->
+        <div class="main-bg-price" id="price">
+            <div class="text-center ticket">
+                <center>
+                    <p id="de" class="text-white"></p>
+                    <table>
+                        <tr>
+                            <th>Number of Seats Booked are :  </th>
+                            <td id="noofseats" class="text-white"></td>
+                        </tr>
+                        <tr>
+                            <th>Seats Booked are :  </th>
+                            <td id="seatName" class="text-white"></td>
+                        </tr>
+                        <tr> 
+                            <th>Actual Price :  </th>
+                            <td id="actual_tot" class="text-white"></td>
+                        </tr>
+                        <tr>
+                            <th>Tax By The Government is :  </th>
+                            <td id="Tax_By_Government" class="text-white"></td>
+                        </tr>
+                        <tr>
+                            <th>Additional Discount By Coupon :  </th>
+                            <td id="couponDis" class="text-white"></td>
+                        </tr>
+                        <tr>
+                            <th>Final amount to be paid is:  </th>
+                            <td><p id="totAmount" class="text-white"></p></td>
+                        </tr>
+                    </table>
+                </center>
+                <button class="btn btn-outline-danger" onclick="return back()">Cancel</button>
+                <a href="movies.html" class="btn btn-outline-danger ml-2" role="button">Home</a>
+                <h1 class="text-white m-5">Thank You For Booking</h1>
+            </div>
+
+        </div> 
+<!--SCRIPT-->
+    <script>
+
+        window.onload = function ()
+        {
+            var details=localStorage.getItem("td");
+            console.log(details);
+            document.getElementById("detail").innerHTML=details;
+            document.getElementById("de").innerHTML=details;
+	    }
+
+        function back()
+        {
+            document.getElementById("seat").style.display="block";
+            document.getElementById("price").style.display="none";
+        }
+        function book()
+        {
+            
+            let arr=["A","B","C","D","E","F","G","H","I"];
+            let seats="";
+            let countA=0,countB=0,countC=0,additional_discount=0,actual_tot;
+            for(let i=0;i<arr.length;i++)
+            {
+                let row=document.getElementsByName(arr[i]);
+                for(let j=0;j<row.length;j++)
+                {
+                    if (row[j].checked)
+                    {
+                        seats+=row[j].value+",";
+                        if(arr[i]=="A")
+                        {
+                            countA++;
+                        }
+                        else if(arr[i]=="B" || arr[i]=="C" || arr[i]=="D" ||arr[i]=="E" ||arr[i]=="F")
+                        {
+                            countB++;
+                        }
+                        else{
+                            countC++;
+                        }
+                    }
+                }
+            }
+            console.log(countA);
+            console.log(countB);
+            console.log(countC);
+            let count=countA+countB+countC;
+            if(count>0)
+            {
+                document.getElementById("seat").style.display="none";
+                document.getElementById("price").style.display="block";
+                actual_tot=countA*180.0+countB*120.0+countC*90.0;
+                let couponEntered=document.getElementById("coupon").value;
+                if(couponEntered=="lbrce")
+                {
+                    additional_discount=(10/100)*actual_tot;
+                }
+                let seats_dis=0;
+                let Tax=(20/100)*actual_tot;
+                document.getElementById("seatName").innerHTML=""+seats;
+                document.getElementById("couponDis").innerHTML="-"+additional_discount+"Rs";
+                document.getElementById("noofseats").innerHTML=""+count;
+                document.getElementById("actual_tot").innerHTML=""+actual_tot+"Rs";
+                document.getElementById("Tax_By_Government").innerHTML="+"+Tax+"Rs";
+                if(count>4)
+                {
+                    seats_dis=(30/100)*actual_tot;
+                }
+                let final_amount=actual_tot+Tax-additional_discount-seats_dis;
+                document.getElementById("totAmount").innerHTML=""+final_amount;
+
+            }
+            else{
+                alert("Atleast select one seat...");
+            }
+            return false;
+        }
+    </script>
+</body>
+</html>

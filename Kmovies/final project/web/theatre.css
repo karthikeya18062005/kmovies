@@ -1,0 +1,52 @@
+.navigation-back{
+    background-color:black;
+    padding: 20px;
+}
+.main-bg{
+    background-color: black;
+    padding-top: 30px;
+}
+label{
+    color: white;
+    font-size: 15px;
+    margin: 3px;
+}
+#mname{
+    color: white;
+    margin-left: 20px;
+    font-size: 25px;
+}
+h2,h4{
+    color: white;
+}
+.Available-sec{
+    background-image:linear-gradient(black,rgb(45, 44, 44),black);
+    padding: 10px;
+} 
+.theatre-card-bg{
+    background-color:rgb(45, 44, 44);
+    border-radius: 20px;
+}
+.theatre-card-bg {
+    border: 0px solid #f20505;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden; /* Ensure images don't overflow the container */
+}
+
+.theatre-card-bg:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgb(246, 5, 5);
+}
+.k-movies-banner{
+    text-align: center;
+    margin: 0px 5px 20px 5px;
+    background-color: black;
+    border-radius: 20px;
+}
+#banner-img{
+    width: 100%;
+}
+#day{
+    font-size: 20px;
+    font-weight: 500;
+}

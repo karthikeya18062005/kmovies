@@ -1,0 +1,55 @@
+.main-bg{
+    background-color: black;
+    padding-bottom: 20pxPX;
+}
+.main-bg-price{
+    background-color: black;
+}
+#seat{
+    display: block;
+}
+p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+td{
+    font-size: 20px;
+}
+th{
+    color: white;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+#price{
+    height: 100vh;
+    display: none;
+    padding: 30px;
+}
+
+#detail{
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.k-movies-banner{
+    text-align: center;
+    margin: 0px 5px 20px 5px;
+    background-color: black;
+    border-radius: 20px;
+}
+#banner-img{
+    width: 80%;
+}
+.navigation-back{
+    background-color:black;
+    padding: 20px;
+}
+h3{
+    color: white;
+    margin-bottom: 10px;
+}
+table,tr,th,td{
+    text-align: center;
+    padding: 5px;
+}
+
